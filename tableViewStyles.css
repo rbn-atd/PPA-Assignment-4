@@ -1,0 +1,9 @@
+.table-view .column-header {
+    -fx-background-color: #FF5A60;
+    -fx-font: 14px "Microsoft JhengHei";
+}
+
+.table-view .label{
+    -fx-text-fill: white;
+    -fx-font: 14px "Microsoft JhengHei";
+}

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Location
+comment0.text=\r\n\ Abstract\ class\ to\ provide\ the\ common\ properties\ of\ listings\ and\ places\ of\ interest.\r\n\r\n\ @author\ Galin\ Mihaylov,\ Ricky\ Brown,\ Reuben\ Atendido,\ Oliver\ Macpherson\r\n
+comment1.params=name\ latitude\ longitude\ price
+comment1.target=Location(java.lang.String,\ double,\ double,\ int)
+comment1.text=\r\n\ @param\ name\r\n\ @param\ latitude\r\n\ @param\ longitude\r\n\ @param\ price\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=double\ getLatitude()
+comment4.params=
+comment4.target=double\ getLongitude()
+comment5.params=
+comment5.target=int\ getPrice()
+numComments=6

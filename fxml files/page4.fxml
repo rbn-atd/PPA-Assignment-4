@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="welcomeBP" prefHeight="1000.0" prefWidth="1000.0" styleClass="border-pane" stylesheets="@../css/page4.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Page4control">
+   <top>
+      <Label fx:id="welcomeTitle" alignment="CENTER" text="Welcome to the Landmark Explorer" textAlignment="CENTER" underline="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="32.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="This system will allow you to explore what London has to offer.">
+               <font>
+                  <Font name="Microsoft JhengHei" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" text="Press the button to continue.">
+               <font>
+                  <Font name="Microsoft JhengHei" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
+            </Label>
+            <Button id="specialButton" fx:id="continueButton" alignment="CENTER" mnemonicParsing="false" onAction="#switchPane" prefHeight="65.0" prefWidth="150.0" text="Continue">
+               <font>
+                  <Font name="Microsoft JhengHei" size="12.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

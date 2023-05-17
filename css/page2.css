@@ -1,0 +1,62 @@
+.toggle-button {
+	-fx-font: 12px "Microsoft JhengHei";
+	-fx-border-color: "black";
+	-fx-border-width: 3.5;
+	-fx-background-insets: 2px;
+	-fx-shape:"M50 3 100 28 100 75 50 100 3 75 3 25 z"
+}
+
+.toggle-button:hover {
+	
+    -fx-scale-x: 1.33;
+    -fx-scale-y: 1.49;
+    
+}
+
+
+#river1 {
+	-fx-border-color: linear-gradient(to bottom, black, #07c1fa);
+}
+
+#river2 {
+	-fx-border-color: linear-gradient(to top left, black, #07c1fa);
+}
+#river3 {
+	-fx-border-color: linear-gradient(to bottom right, black, #07c1fa);
+}
+#river4{
+	-fx-border-color: linear-gradient(to top , black, #07c1fa);
+}
+#river5{
+	-fx-border-color: linear-gradient(to top right, black, #07c1fa);
+}
+
+#river6{
+	-fx-border-color: linear-gradient(to bottom left, black, #07c1fa);
+}
+
+
+.button {
+	-fx-background-color: "#facabe";
+	-fx-font: 20px "Microsoft JhengHei";
+	-fx-background-radius: 15;
+}
+
+.button:hover {
+	-fx-background-color: "#f79279";
+	
+}
+
+.button:pressed {
+	-fx-background-color: "#f76f4d";
+	
+}
+
+.hbox {
+	-fx-background-image: url("/Images/airbnb-bgDarker.png/");
+	-fx-background-size: cover,auto;
+}
+
+.label {
+	-fx-text-fill: "white";
+}

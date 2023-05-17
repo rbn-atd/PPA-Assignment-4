@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane onMouseEntered="#setPrices" prefHeight="1000.0" prefWidth="1000.0" styleClass="border-pane" stylesheets="@../css/page1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Page1control">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="127.0" prefWidth="1315.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="0.0" prefWidth="1200.0" text="Welcome to the AirBnB property viewer, where you can browse properties across London for temporary rental.">
+               <font>
+                  <Font name="Microsoft JhengHei" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="0.0" prefWidth="1200.0" text="Begin by selecting the appropriate price range for you using the drop downs found at the top right corner.">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+            <Label alignment="CENTER" prefHeight="0.0" prefWidth="1000.0" text="After selecting a price range you may use the navigational buttons on the bottom corners to switch through four informative pages.">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+            <Label prefHeight="17.0" text="Click the About Program button on the top left for detailed descriptions on how to use each page">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" prefHeight="67.0" prefWidth="1000.0" text="Designed by Leader Galin Mihaylov with Ricky Brown, Reuben Atendido and Oliver Macpherson">
+               <effect>
+                  <Bloom threshold="0.32" />
+               </effect></Label>
+            <Label id="pricings" fx:id="priceRange" alignment="CENTER" prefHeight="174.0" text="Current Price Range: ">
+               <effect>
+                  <DropShadow height="37.13" radius="14.2575" spread="0.62" width="21.9" />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Label alignment="BOTTOM_CENTER" prefHeight="57.0" prefWidth="343.0" text="(Win) ctrl + L/R arrows     (Mac) cmd + L/R arrows" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </bottom>
+   <top>
+      <Label alignment="TOP_CENTER" prefHeight="150.0" prefWidth="1000.0" text="Welcome!" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="96.0" />
+         </font>
+         <effect>
+            <DropShadow height="13.98" radius="4.165" spread="0.47" width="4.68" />
+         </effect>
+      </Label>
+   </top>
+</BorderPane>

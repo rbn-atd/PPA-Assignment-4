@@ -1,0 +1,14 @@
+.border-pane {
+	-fx-background-image: url("/Images/nightTimeC.gif/");
+	-fx-background-size: cover,auto;
+	-fx-background-color: "grey";
+} 
+.label {
+	-fx-text-fill: white;
+	
+}
+
+#pricings {
+	-fx-font: 20px "Microsoft JhengHei";
+}
+

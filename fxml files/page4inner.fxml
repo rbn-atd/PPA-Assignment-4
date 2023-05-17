@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="totalBorder" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Page4control">
+   <top>
+      <VBox onMouseEntered="#showToolBar" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar fx:id="toolBar" prefHeight="41.0" prefWidth="2000.0" style="-fx-background-color: #ed9599;">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+               <items>
+                  <CheckBox fx:id="musCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Museum">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="ridCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Ride">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="royCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Royal">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="expCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Experience">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="zooCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Zoo">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="chuCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Church">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="sigCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Sightseeing">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="parCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Park">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="spoCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Sports">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="themCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Theme Park">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="shoCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Shopping">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="theaCheck" disable="true" mnemonicParsing="false" onAction="#updateDisplay" text="Theatre">
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <HBox prefHeight="0.0" prefWidth="200.0" visible="false" />
+                  <ComboBox fx:id="maxPrice" onAction="#updateDisplay" onMouseClicked="#initialiseComboBox" promptText="Select Max Price" />
+               </items>
+            </ToolBar>
+            <StackPane fx:id="arrowPane" prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <Label>
+                     <graphic>
+                        <ImageView fx:id="arrowLabel" fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/grey%20triangle.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <BorderPane onMouseEntered="#hideToolBar" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <StackPane alignment="TOP_CENTER" prefHeight="64.0" prefWidth="750.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="imageLabel" alignment="CENTER" contentDisplay="CENTER" text="No Parameters Selected">
+                           <font>
+                              <Font name="Microsoft JhengHei" size="12.0" />
+                           </font></Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="titleLabel" text="No Parameters Selected" underline="true">
+                           <font>
+                              <Font name="Microsoft JhengHei" size="30.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="0.21" />
+                           </effect></Label>
+                     </children>
+                  </StackPane>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="descLabel" text="No Parameters Selected">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Microsoft JhengHei" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label id="special" fx:id="priceLabel">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="TOP_CENTER" prefHeight="25.0" prefWidth="750.0">
+                           <children>
+                              <Label fx:id="kidLabel" text="Great for Kids" visible="false">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </Label>
+                              <CheckBox fx:id="kidCheckBox" contentDisplay="GRAPHIC_ONLY" disable="true" mnemonicParsing="false" text="Great for Kids" visible="false" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="24.0" prefWidth="750.0">
+                           <children>
+                              <Label fx:id="giftLabel" text="Gift Shop" visible="false">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <CheckBox fx:id="giftCheckBox" contentDisplay="GRAPHIC_ONLY" disable="true" mnemonicParsing="false" text="CheckBox" visible="false" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="34.0" prefWidth="750.0">
+                           <children>
+                              <Label fx:id="foodLabel" text="Food and Drink Options" visible="false">
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </Label>
+                              <CheckBox fx:id="foodCheckBox" contentDisplay="GRAPHIC_ONLY" disable="true" mnemonicParsing="false" text="CheckBox" visible="false" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="750.0">
+                           <children>
+                              <Label fx:id="famousLabel" text="World Famous" visible="false">
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </Label>
+                              <CheckBox fx:id="famousCheckBox" contentDisplay="GRAPHIC_ONLY" disable="true" mnemonicParsing="false" text="CheckBox" visible="false" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <StackPane fx:id="webStack" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button id="specialButton" fx:id="mapButton" mnemonicParsing="false" onAction="#openGoogleMap" text="View on Map" visible="false">
+                                 <HBox.margin>
+                                    <Insets right="10.0" top="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></StackPane>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ed9599;" BorderPane.alignment="CENTER">
+              <items>
+                <Button id="nav" fx:id="leftButton" disable="true" mnemonicParsing="false" onAction="#progressDataDisplayLeft" style="-fx-background-color: white;" text="&lt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button id="nav" fx:id="rightButton" disable="true" mnemonicParsing="false" onAction="#progressDataDisplayRight" style="-fx-background-color: white;" text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+              </items>
+            </ToolBar>
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>

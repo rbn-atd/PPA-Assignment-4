@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Page1control
+comment0.text=\r\n\ Class\ to\ load\ the\ fxml\ file\ for\ the\ first\ page\ in\ the\ application.\r\n\r\n\ @author\ Galin\ Mihaylov,\ Ricky\ Brown,\ Reuben\ Atendido,\ Oliver\ Macpherson\r\n
+comment1.params=
+comment1.target=javafx.scene.layout.Pane\ createPage()
+comment1.text=\r\n\ Loads\ the\ fxml\ file.\r\n\ @return\ the\ fxml\ file\ as\ a\ Pane\r\n
+comment2.params=
+comment2.target=void\ setPrices()
+comment2.text=\r\n\ Gets\ the\ current\ min\ and\ max\ prices\ in\ the\ comboboxes\ and\r\n\ concatenates\ them\ to\ the\ label\ on\ the\ first\ page.\r\n
+comment3.params=min
+comment3.target=void\ setMinPrice(int)
+comment3.text=\r\n\ Set\ the\ minimum\ price.\r\n\ @param\ min\ The\ price\ which\ minPrice\ is\ to\ be\ set\ to.\r\n
+comment4.params=max
+comment4.target=void\ setMaxPrice(int)
+comment4.text=\r\n\ Set\ the\ maximum\ price.\r\n\ @param\ max\ The\ price\ which\ maxPrice\ is\ to\ be\ set\ to.\r\n
+numComments=5

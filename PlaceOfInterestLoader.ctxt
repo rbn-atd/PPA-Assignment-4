@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PlaceOfInterestLoader
+comment0.text=\n\ Seperate\ implementation\ of\ CSV\ loader,\ syntax\ taken\ from\ airbnbdataloader\ implementation\n
+comment1.params=
+comment1.target=java.util.ArrayList\ load()
+numComments=2

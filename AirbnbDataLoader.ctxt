@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=AirbnbDataLoader
+comment1.params=
+comment1.target=java.util.ArrayList\ load()
+comment1.text=\ \n\ Return\ an\ ArrayList\ containing\ the\ rows\ in\ the\ AirBnB\ London\ data\ set\ csv\ file.\n
+numComments=2

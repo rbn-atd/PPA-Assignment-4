@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="1000.0" prefWidth="1000.0" styleClass="hbox" stylesheets="@../css/page2.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Page2control">
+   <children>
+      <GridPane fx:id="mapView" alignment="CENTER" hgap="10.0" prefHeight="300.0" prefWidth="704.0" snapToPixel="false" styleClass="grid-pane">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="0.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="NaN" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="NaN" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints maxHeight="71.19999999999999" minHeight="70.0" percentHeight="0.0" prefHeight="71.19999999999999" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ToggleButton fx:id="EALI" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="EALI" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <toggleGroup>
+                  <ToggleGroup fx:id="buttons" />
+               </toggleGroup>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="WALT" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="WALT" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="BARN" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="BARN" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HRGY" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HRGY" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HILL" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HILL" toggleGroup="$buttons" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HOUN" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HOUN" toggleGroup="$buttons" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river2" fx:id="MERT" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="MERT" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="CROY" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="CROY" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="ENFI" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="ENFI" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river3" fx:id="KENS" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="KENS" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river6" fx:id="WSTM" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="WSTM" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river1" fx:id="NEWH" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="NEWH" toggleGroup="$buttons" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river3" fx:id="TOWH" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="TOWH" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river1" fx:id="BARK" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="BARK" toggleGroup="$buttons" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HAVE" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HAVE" toggleGroup="$buttons" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HRRW" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HRRW" toggleGroup="$buttons" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="BREN" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="BREN" toggleGroup="$buttons" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="CAMD" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="CAMD" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="ISLI" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="ISLI" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="HACK" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HACK" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="REDB" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="REDB" toggleGroup="$buttons" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river3" fx:id="HAMM" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="HAMM" toggleGroup="$buttons" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river4" fx:id="WAND" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="WAND" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river1" fx:id="CITY" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="CITY" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river2" fx:id="GWCH" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="GWCH" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river2" fx:id="STHW" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="STHW" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river5" fx:id="LAMB" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="LAMB" toggleGroup="$buttons" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river4" fx:id="BEXL" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="BEXL" toggleGroup="$buttons" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="LEWS" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="LEWS" toggleGroup="$buttons" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river3" fx:id="RICH" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="RICH" toggleGroup="$buttons" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="SUTT" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="SUTT" toggleGroup="$buttons" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="BROM" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="BROM" toggleGroup="$buttons" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="river2" fx:id="KING" mnemonicParsing="false" onAction="#toggleButton" prefHeight="70.0" prefWidth="70.0" text="KING" toggleGroup="$buttons" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+         </children>
+         <padding>
+            <Insets left="100.0" right="100.0" />
+         </padding>
+         <HBox.margin>
+            <Insets left="50.0" />
+         </HBox.margin>
+      </GridPane>
+      <VBox alignment="CENTER" prefHeight="70.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label prefHeight="12.0" text="Current Borough Selected:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="boroughName" prefHeight="70.0" text="&lt;-- Select Borough on Map">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" alignment="CENTER" prefHeight="23.0" text="Number Of Properties In Borough:">
+               <font>
+                  <Font name="Microsoft JhengHei" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="numProperties" alignment="CENTER" prefHeight="70.0" text="0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" alignment="CENTER" text="Number Of Properties In Borough Within Filter:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="filteredNumProperties" alignment="CENTER" prefHeight="70.0" text="0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="viewPropertiesButton" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#viewPropertiesButton" prefHeight="67.0" prefWidth="263.0" text="View All Properties">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

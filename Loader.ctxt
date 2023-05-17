@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Loader
+comment0.text=\r\n\ Abstract\ class\ to\ simply\ provide\ conversion\ methods\ to\ both\ the\ airbnb\ and\ the\r\n\ place\ of\ interest\ loader.\r\n\ \r\n\ Conversion\ methods\ taken\ from\ AirbnbDataLoader\ class\r\n\r\n\ @author\ Galin\ Mihaylov,\ Ricky\ Brown,\ Reuben\ Atendido,\ Oliver\ Macpherson\r\n
+comment1.params=doubleString
+comment1.target=java.lang.Double\ convertDouble(java.lang.String)
+comment1.text=\r\n\ Taken\ from\ AirbnbDataLoader\ Class\r\n\ @param\ doubleString\ the\ string\ to\ be\ converted\ to\ Double\ type\r\n\ @return\ the\ Double\ value\ of\ the\ string,\ or\ -1.0\ if\ the\ string\ is\ \r\n\ either\ empty\ or\ just\ whitespace\r\n
+comment2.params=intString
+comment2.target=java.lang.Integer\ convertInt(java.lang.String)
+comment2.text=\r\n\ Taken\ from\ AirbnbDataLoader\ Class\r\n\ @param\ intString\ the\ string\ to\ be\ converted\ to\ Integer\ type\r\n\ @return\ the\ Integer\ value\ of\ the\ string,\ or\ -1\ if\ the\ string\ is\ \r\n\ either\ empty\ or\ just\ whitespace\r\n
+comment3.params=num
+comment3.target=boolean\ convertBool(java.lang.Integer)
+comment3.text=\r\n\ Converts\ an\ integer\ value\ to\ a\ corresponding\ boolean.\r\n\ @param\ num\ The\ integer\ to\ be\ converted.\r\n\ @return\ true\ If\ the\ parameter\ is\ equal\ to\ 1.\r\n
+numComments=4

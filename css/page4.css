@@ -1,0 +1,32 @@
+.label {
+	-fx-text-fill: "white";
+	-fx-font-weight: bold;
+}
+
+#specialButton{
+	-fx-font: 20px "Microsoft JhengHei";
+	-fx-background-color: "#facabe";
+	-fx-background-radius: 7;
+}
+
+#specialButton:hover {
+	-fx-background-color: "#f79279";
+    	-fx-scale-x: 1.1;
+    	-fx-scale-y: 1.1;
+	
+}
+
+#specialButton:pressed {
+	-fx-background-color: "#f76f4d";
+	
+}
+
+.border-pane {
+	-fx-background-image: url("/Images/airbnb-bgDarker.png/");
+	-fx-background-size: cover,auto;
+}
+
+#nav:hover {
+	-fx-scale-x: 1.1;
+    	-fx-scale-y: 1.1;
+}

@@ -1,0 +1,50 @@
+#topButton{
+    -fx-background-color: "white";
+    -fx-font: 14px "Microsoft JhengHei";
+}
+
+#topButton: hover{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#left {
+    -fx-background-color: "white";
+    -fx-border-width: 1.5;
+    -fx-shape: "M 0 0 40 20 40 -20 z";
+    -fx-pref-width: 30px;
+}
+
+#left: hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#right {
+    -fx-background-color: "white";
+    -fx-border-width: 1.5;
+    -fx-shape: "M 80 0 40 20 40 -20 z";
+    -fx-pref-width: 30px;    
+}
+
+
+#right: hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#topText {
+    -fx-text-fill: white;
+    -fx-font: 14px "Microsoft JhengHei";
+}
+
+
+.combo-box{
+    -fx-background-color: "white";
+    -fx-font: 14px "Microsoft JhengHei";
+}
+
+
